@@ -61,12 +61,12 @@ header{
 
 header:hover .robot-head-right{
   transition: all 500ms linear;
-  left :20px;
+  right: -20px;
 }
 
 header:hover .robot-head-left{
   transition: all 500ms linear;
-  left: -50px;
+  right: 50px;
 }
 
 header:hover .robot-brain{

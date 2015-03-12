@@ -12,52 +12,64 @@ body{
   margin: 0em;
 }
 
-header{
+p{
   background-color: #1a2230;
   color: #fff;
   padding: .5em;
-  margin-top: 249px;
+  margin: 0em;
   text-align: center;
   font-size: 2rem;
-  position: absolute;
   width: 100%;
 }
 
 .robot-body{
-  background-color:#2c3950;
-  display: block;
-  position: relative;
+  top: 120px;
   width: 320px;
-  padding: 4em 0em 0em 0em;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
 }
 
 .robot-brain{
-  display: block;
-  position: relative;
   width: 46px;
-  bottom: 390px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  left: 138px;
+  top: 20px;
 }
 
 .robot-head-left{
-  display: inline-block;
-  position: relative;
   width: 125px;
-  left: 140px;
-  bottom: 240px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: 70px;
+  right: 14px;
 }
 
 .robot-head-right{
-  display: inline-block;
-  position: relative;
   width: 125px;
-  bottom: 240px;
-  left: 207px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: 70px;
+  right: 17px;
+}
+
+.robot{
+  width: 320px;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #2c3950;
+  height: 305px;
+}
+
+header:hover .robot-head-right{
+  transition: all 200ms linear;
+  left :20px;
+}
+
+header:hover .robot-head-left{
+  transition: all 200ms linear;
+  left: -50px;
+}
+
+header:hover .robot-brain{
+  transition: all 200ms linear;
+  top: -26px;
 }
